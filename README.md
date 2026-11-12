@@ -1,209 +1,175 @@
-Sketchware Pro Google Play Billing v9.1
+# Sketchware Pro Google Play Billing v9.1
 
-A Ready-to-Use Google Play Billing Project for Sketchware Pro
+A ready-to-use Sketchware Pro project demonstrating **Google Play Billing Library 9.1.0**.
 
-Developed by TorunHero Studio
+This project is designed to help Sketchware Pro developers easily integrate Google Play in-app purchases and subscriptions into their Android applications.
 
-""Billing Library" (https://img.shields.io/badge/Google%20Play%20Billing-9.1.0-brightgreen)" (https://developer.android.com/google/play/billing)
-""Platform" (https://img.shields.io/badge/Platform-Android-green)" (https://developer.android.com/)
-""IDE" (https://img.shields.io/badge/IDE-Sketchware%20Pro-blue)" (https://github.com/Sketchware-Pro/Sketchware-Pro)
+## Ready to Use – No Extra Setup Required
 
-About This Project
+**The included SWB file is ready to use!**
 
-This repository provides a complete, ready-to-use Sketchware Pro project demonstrating Google Play Billing Library 9.1.0 integration.
+All required project configurations, setup, and included libraries are already provided inside the project. You do not need to download or install libraries separately.
 
-It is designed to help Android developers integrate subscription and one-time purchase functionality into their applications without building the entire billing implementation from scratch.
+### How to Use
 
-The project includes an importable SWB file and a complete source project in ZIP format.
+1. Download the `.swb` file from the `SWB/` folder.
+2. Import it into Sketchware Pro.
+3. Open the project.
+4. Customize the UI, product IDs, subscription plans, and features according to your app's requirements.
+5. Configure matching products and base plans in your Google Play Console.
+6. Test your app before publishing.
 
-Features
+**Import, customize, and use!**
+
+The project is provided as a ready-to-use starting point. You can adapt it to your own application and requirements.
+
+> **Important:** Google Play Console configuration is still required for real purchases. Your product IDs and subscription base plan IDs in Google Play Console must match those used in the project.
+
+## Features
 
 - Google Play Billing Library 9.1.0
-- Ready-to-import Sketchware Pro project
-- Complete source project in ZIP format
-- Subscription product integration
+- Ready-to-import Sketchware Pro SWB project
+- Complete source project ZIP
+- Subscription support
 - Multiple subscription base plans
-- Lifetime one-time purchase
-- Dynamic product price loading from Google Play
+- Lifetime one-time purchase support
+- Dynamic product pricing from Google Play
 - Subscription offer token handling
-- Purchase flow management
-- Purchase acknowledgement
-- Restore existing purchases
-- Billing connection and reconnection handling
-- Retry mechanism for temporary connection failures
-- Duplicate purchase-flow protection
-- Basic local Pro status management
-- Subscription management page link
-- Purchase status and error messages
+- Purchase flow and acknowledgement
+- Restore purchases
+- Subscription management
+- Billing connection and retry handling
+- Duplicate purchase-flow prevention
+- Local Pro status management
 
-Project Downloads
+## Project Downloads
 
-File| Description
-"SWB/GooglePlayBilling_v9.1.swb"| Ready-to-import Sketchware Pro project
-"Source-Code/GooglePlayBilling_v9.1_Source.zip"| Complete source project
+| File | Description |
+|---|---|
+| `SWB/GooglePlayBilling_v9.1.swb` | Ready-to-use Sketchware Pro project |
+| `Source-Code/GooglePlayBilling_v9.1_Source.zip` | Complete source project ZIP |
 
-Download or clone this repository to get the project files.
-
-Requirements
+## Requirements
 
 - Sketchware Pro
-- Android application project
-- Google Play Console developer account
-- Google Play Billing Library 9.1.0
-- Configured subscription and in-app products
-- Google Play Store for purchase testing
+- Android device for testing
+- Google Play Console developer account for real purchase testing
+- An application configured with Google Play Billing
 
-Google Play Billing Configuration
+**No separate library download is required for the included SWB project.**
 
-The example project uses the following product structure.
+## Google Play Console Configuration
 
-1. Subscription Product
+The included project uses these product IDs:
 
-Product ID:
+### 1. Subscription Product
 
-"pro_sub"
+Create one subscription product:
 
-This single subscription product contains four base plans.
+- Product ID: `pro_sub`
 
-Plan| Base Plan ID in the example code| Billing Period
-1 Month| "pro-1months"| 1 Month
-3 Months| "pros-3months"| 3 Months
-6 Months| "pro-6months"| 6 Months
-1 Year| "pro-1years"| 1 Year
+Add the following four base plans:
 
-Important: These IDs must match the constants in the included source code exactly. You can use different IDs, but you must update the corresponding constants in "MainActivity" as well.
+| Plan | Base Plan ID | Billing Period |
+|---|---|---|
+| 1 Month | `pro-1months` | 1 Month |
+| 3 Months | `pros-3months` | 3 Months |
+| 6 Months | `pro-6months` | 6 Months |
+| 1 Year | `pro-1years` | 1 Year |
 
-2. Lifetime Product
+**Important:** Use the exact base plan IDs shown above, including spelling, so they match the project code.
 
-Product ID:
+Activate the subscription and configure prices for your target countries.
 
-"pro_lifetime"
+### 2. Lifetime Product
 
-This is a separate one-time, non-consumable purchase product.
+Create a one-time in-app product:
 
-It is intended for users who want permanent access to the Pro features through a single purchase.
+- Product ID: `pro_lifetime`
+- Product type: One-time product
+- Purchase type: Non-consumable
 
-How to Import the SWB Project
+Set the price and activate the product.
 
-1. Download "GooglePlayBilling_v9.1.swb" from the "SWB" folder.
+## Customization
+
+You can customize the project according to your application:
+
+- Change the app interface and design.
+- Change product IDs if needed.
+- Add or remove subscription plans.
+- Set your own prices in Google Play Console.
+- Customize Pro status and premium features.
+- Integrate the billing functionality into your own app.
+
+If you change product IDs or base plan IDs in the code, make sure the corresponding IDs in Google Play Console match exactly.
+
+## Import Instructions
+
+1. Download `GooglePlayBilling_v9.1.swb`.
 2. Open Sketchware Pro.
-3. Use the project's SWB import option.
-4. Import the downloaded file.
-5. Open the imported project.
-6. Review the application package name, product IDs and Billing configuration.
-7. Build and test the application.
+3. Import the SWB project.
+4. Open the imported project.
+5. Customize it and configure your Google Play products.
 
-How to Use the Source Code
+The complete source project is also available in the `Source-Code/` folder.
 
-1. Download "GooglePlayBilling_v9.1_Source.zip".
-2. Extract the ZIP file.
-3. Import or open the source project using the appropriate Sketchware Pro workflow.
-4. Review the billing implementation and project configuration.
-5. Change the example package name and product IDs if necessary.
-6. Configure your own products in Google Play Console.
-7. Build and test your application.
+## Gradle Dependency
 
-Billing Library Dependency
+The project uses:
 
-The example uses Google Play Billing Library version 9.1.0.
-
-For Gradle-based Android projects, the dependency is:
-
+```gradle
 implementation "com.android.billingclient:billing:9.1.0"
+```
 
-Make sure the dependency and project configuration are compatible with your Android build environment.
+The SWB project already includes its required setup and libraries. You do not need to download this dependency separately when importing the included project.
 
-Testing Purchases
+## Testing
 
-Before releasing your application:
+Before publishing your application:
 
-1. Configure the application in Google Play Console.
-2. Create and activate the required products and base plans.
-3. Upload an application build to an appropriate testing track.
-4. Add eligible license testers.
-5. Install the application through Google Play using a tester account.
-6. Test each subscription plan.
-7. Test the lifetime purchase.
-8. Test purchase restoration and subscription management.
-9. Check pending purchases, cancellation and error handling.
+1. Upload your app to an Internal Testing track.
+2. Add your tester account to the License Testing list.
+3. Install the app through Google Play.
+4. Test subscription purchases.
+5. Test lifetime purchases.
+6. Test purchase restoration.
+7. Test subscription cancellation and expiration.
 
-Purchases made by sideloading an APK may not behave like purchases made through Google Play testing tracks.
+## Security Notice
 
-Important Security Notes
+This project demonstrates Google Play Billing integration.
 
-This project demonstrates billing integration and local Pro status handling.
+For production applications, purchase verification should be performed securely using a trusted backend and the Google Play Developer API.
 
-Local SharedPreferences are not secure purchase verification.
+Do not rely only on a local SharedPreferences value to determine whether a purchase is valid. Handle expiration, refunds, and revoked purchases properly.
 
-The example stores Pro status locally. This is useful for demonstrating application logic, but a modified device or application could manipulate local preferences.
+## Troubleshooting
 
-For production applications:
+- Make sure your product IDs match Google Play Console.
+- Make sure subscription base plan IDs match exactly.
+- Ensure your products and base plans are activated.
+- Install the app through a Google Play testing track.
+- Use a valid License Tester account.
+- Check your internet connection and Play Store availability.
 
-- Verify purchase tokens using a trusted backend and the Google Play Developer API.
-- Do not activate premium access based only on a locally stored Boolean value.
-- Handle subscription expiration, cancellation, refund and revocation.
-- Never expose private API keys, service account credentials or signing keys.
-- Follow the current Google Play Billing policies.
+## Credits
 
-Troubleshooting
+Developed and shared by **TorunHero Studio**.
 
-Billing connection failed
+Credit or attribution is appreciated but not mandatory. You are welcome to customize this project for your own applications.
 
-Check the internet connection, Google Play Store availability and Billing configuration.
+## License
 
-Product not found
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-Verify that the product ID is identical in the source code and Google Play Console.
+Third-party libraries and dependencies remain subject to their respective licenses.
 
-Also make sure the product and its base plans are active and available.
+## Contributing
 
-Billing error 5 (DEVELOPER_ERROR)
+Suggestions, improvements, and bug reports are welcome. Feel free to contribute and help improve this project.
 
-Check:
+---
 
-- Application package name
-- Google Play Console application configuration
-- Signing certificate
-- Billing dependency
-- Product and base plan configuration
-- Google Play testing installation
-
-Subscription price not loading
-
-Make sure the subscription product contains active base plans and that the corresponding base plan IDs match the source code.
-
-Purchase already owned
-
-Use the restore purchase functionality and check the user's existing Google Play purchases.
-
-Credit
-
-This project is developed and published by TorunHero Studio.
-
-If you use this project, mentioning TorunHero Studio in your application's About page, credits section or another appropriate location is appreciated.
-
-Attribution to TorunHero Studio is optional. However, the copyright and MIT License notice must be retained as required by the license.
-
-License
-
-This project is distributed under the MIT License.
-
-See the "LICENSE" file for details.
-
-Developer
-
-TorunHero Studio
-
-GitHub: https://github.com/torunbd
-
-Repository: https://github.com/torunbd/sketchware-pro-google-play-billing-v9.1
-
-Contributions
-
-Suggestions, bug reports and improvements are welcome.
-
-You can open a GitHub Issue or submit a Pull Request.
-
-If this project helps you, consider giving the repository a ⭐ Star.
-
-Made for the Sketchware Pro developer community.
+**Developer:** TorunHero Studio  
+**GitHub:** https://github.com/torunbd
