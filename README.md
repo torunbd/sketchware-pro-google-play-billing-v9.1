@@ -1,4 +1,3 @@
-
 Sketchware Pro Google Play Billing v9.1
 
 A Ready-to-Use Google Play Billing Project for Sketchware Pro
