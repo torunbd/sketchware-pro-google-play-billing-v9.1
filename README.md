@@ -173,3 +173,13 @@ Suggestions, improvements, and bug reports are welcome. Feel free to contribute 
 
 **Developer:** TorunHero Studio  
 **GitHub:** https://github.com/torunbd
+
+## Screenshots
+
+Here are some screenshots of the project:
+
+![Subscription Screen](Screenshots/Screenshot_2026-11-12-20-19-09-708_com.android.vending.jpg)
+
+![Lifetime Purchase](Screenshots/lifetime.png)
+
+![Pro Active](Screenshots/pro-active.png)
