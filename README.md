@@ -72,10 +72,10 @@ Add the following four base plans:
 
 | Plan | Base Plan ID | Billing Period |
 |---|---|---|
-| 1 Month | `pro-1months` | 1 Month |
-| 3 Months | `pros-3months` | 3 Months |
-| 6 Months | `pro-6months` | 6 Months |
-| 1 Year | `pro-1years` | 1 Year |
+| 1 Month | `pro-1month` | 1 Month |
+| 3 Months | `pros-3month` | 3 Months |
+| 6 Months | `pro-6month` | 6 Months |
+| 1 Year | `pro-1year` | 1 Year |
 
 **Important:** Use the exact base plan IDs shown above, including spelling, so they match the project code.
 
